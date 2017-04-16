@@ -1,0 +1,58 @@
+﻿<html>
+
+<head>
+
+<meta charset="utf-8"/>
+
+<script>
+ function cuboDonumero(numero){
+
+  var cubo=numero*numero*numero;
+  return cubo;
+
+}
+ 
+function evento(){
+
+  var num_valor = window.document.getElementById("num").value;
+
+  var resl ="O Cubo do Número é Igual a "+cuboDonumero(num_valor);
+ 
+  window.document.getElementById("mensagem").innerHTML=resl ;
+
+}
+
+</script>
+<center>
+
+</head>
+
+<body>
+
+<h1>Retornando Valor de uma Função</h1>
+
+<table>
+
+<tr>
+
+<td width="150">Digite um Numero: </td>
+
+<td width="30"><input sype="text" Digite um Numero id="num" value=""size="3"/>
+</td>
+</tr>
+<tr>
+<td width="30 colspan="2"align="center"><input type="button" value="Calcula"onclick="evento()">
+</td>
+
+</tr>
+
+</table>
+
+<br>
+
+<p id="mensagem"></p>
+
+</body>
+
+
+</html>
